@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aspect-Based Sentiment Analysis of BPJS Kesehatan | Daniel Lincoln Ginting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">Daniel Lincoln Ginting</a>
+  <ul>
+    <li><a href="index.html#home">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#experience">Experience</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#certifications">Certifications</a></li><li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="dd"><button class="btn">Download CV</button>
+    <div><a href="#" id="cv-id">CV Bahasa Indonesia</a><a href="#" id="cv-en">CV English</a></div>
+  </div>
+</div></nav>
+
+<main class="wrap">
+<a class="back" href="index.html#projects">Back to projects</a>
+<header class="ph">
+  <span class="tag">Final year thesis</span>
+  <h1 style="max-width:30ch">Aspect-Based Sentiment Analysis for Evaluating BPJS Kesehatan Service Quality</h1>
+  <div class="stats" style="margin-top:28px">
+    <div class="card stat"><b>5,000+</b><span>Data points from X & Instagram</span></div>
+    <div class="card stat"><b>5</b><span>SERVQUAL-aligned topics</span></div>
+    <div class="card stat"><b>86%</b><span>Model accuracy</span></div>
+    <div class="card stat"><b>92%</b><span>Average F1-score</span></div>
+  </div>
+</header>
+
+<section>
+  <h2>Key Tools</h2>
+  <div data-chips="Python,IndoBERT,BERTopic,NLP,SERVQUAL Framework,Sentiment Classification,Topic Modeling"></div>
+</section>
+
+<section>
+  <h2>Project Overview</h2>
+  <div class="two">
+    <div class="card"><h3 class="t">Problem</h3><p>Healthcare providers like BPJS Kesehatan serve millions of members, generating massive amounts of unstructured public feedback on social media. Manually analyzing this data to pinpoint exactly what the public is complaining about (e.g., app errors vs. hospital queues) and how they feel about it is highly inefficient and prone to human bias.</p></div>
+    <div class="card"><h3 class="t">Objective</h3><p>Develop an automated, data-driven NLP model capable of extracting specific discussion topics (Service Quality dimensions) and accurately classifying public sentiment from noisy Indonesian social media text.</p></div>
+  </div>
+  <div class="card"><h3 class="t">Approach at a glance</h3>
+    <ul style="padding-left:20px">
+      <li><b>Data:</b> over 5,000 public comments about BPJS Kesehatan services, collected from social media X and Instagram.</li>
+      <li><b>Topics:</b> BERTopic was compared with a rule-based approach to group comments into 5 main topics aligned with the SERVQUAL service quality dimensions.</li>
+      <li><b>Sentiment:</b> IndoBERT was fine-tuned with a hybrid labeling strategy to classify sentiment in Indonesian text.</li>
+      <li><b>Validation:</b> the output was checked against expert judgment to confirm it holds up in practice.</li>
+      <li><b>Why it matters:</b> the results show which service aspects people talk about and how they feel, so improvements can be prioritized with data instead of guesswork.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Project Video Demo</h2>
+  <iframe class="pdf" style="height:auto;aspect-ratio:16/9" src="https://www.youtube.com/embed/XAgMnBU9idg" title="Project video demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  <a class="small" href="https://www.youtube.com/watch?v=XAgMnBU9idg" target="_blank" rel="noopener">Watch on YouTube</a>
+</section>
+
+<section>
+  <h2>Result Summary of The Project</h2>
+  <div class="grid3">
+    <div class="card"><h3 class="t">Topic Modeling Optimization</h3><p>Successfully compared an unsupervised machine learning approach (BERTopic) against a Rule-Based approach to map unstructured public comments into distinct Service Quality (ServQual) dimensions such as Reliability and Responsiveness.</p></div>
+    <div class="card"><h3 class="t">High-Performance Sentiment Classification</h3><p>Fine-tuned the IndoBERT deep learning architecture utilizing a hybrid labeling strategy, achieving robust evaluation metrics (Accuracy and F1-Score) specifically optimized for the Indonesian language structure.</p></div>
+    <div class="card"><h3 class="t">Expert Validation Alignment</h3><p>The model’s output was rigorously validated against Expert Judgment, proving the pipeline’s real-world reliability in extracting actionable insights from public healthcare feedback.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Project Report</h2>
+  <iframe class="pdf" src="https://drive.google.com/file/d/19JbnS-SHlK3Q4JUXPZmszMNgowm6tdr8/preview" title="Thesis project report" loading="lazy" allow="autoplay"></iframe>
+  <a class="small" href="https://drive.google.com/file/d/19JbnS-SHlK3Q4JUXPZmszMNgowm6tdr8/view?usp=sharing" target="_blank" rel="noopener">Open the report in a new tab</a>
+</section>
+
+<div class="nextp"><a href="market-expansion.html">Previous: Market Expansion dashboard</a><a href="environmental-audio.html">Next project: Environmental sound classification</a></div>
+</main>
+
+<footer>© 2026 Daniel Lincoln Ginting</footer>
+<script src="script.js"></script>
+<script src="i18n-id.js"></script>
+<script src="i18n.js"></script>
+</body>
+</html>

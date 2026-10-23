@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Environmental Sound Classification System | Daniel Lincoln Ginting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">Daniel Lincoln Ginting</a>
+  <ul>
+    <li><a href="index.html#home">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#experience">Experience</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#certifications">Certifications</a></li><li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="dd"><button class="btn">Download CV</button>
+    <div><a href="#" id="cv-id">CV Bahasa Indonesia</a><a href="#" id="cv-en">CV English</a></div>
+  </div>
+</div></nav>
+
+<main class="wrap">
+<a class="back" href="index.html#projects">Back to projects</a>
+<header class="ph">
+  <span class="tag">Advanced data mining project</span>
+  <h1>Environmental Sound Classification System</h1>
+  <div class="stats" style="margin-top:28px">
+    <div class="card stat"><b>87%</b><span>Classification accuracy across 50 sound categories</span></div>
+    <div class="card stat"><b>50</b><span>Environmental sound classes from the ESC-50 dataset</span></div>
+    <div class="card stat"><b>3</b><span>Input channels: Mel-Spectrogram, Delta, Delta-Delta</span></div>
+    <div class="card stat"><b>Live</b><span>Deployed as an interactive Streamlit web app</span></div>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px">
+    <a class="btn p" href="https://esc50-audioclassification.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+    <a class="btn" href="https://github.com/daniellincolnginting/Environmental-Audio-Analysis" target="_blank" rel="noopener">GitHub repository</a>
+  </div>
+</header>
+
+<section>
+  <h2>Key Tools</h2>
+  <div data-chips="Python,CNN,ResNet50,Mel-Spectrogram,Streamlit,Deep Learning,Audio Signal Processing"></div>
+</section>
+
+<section>
+  <h2>Project Overview</h2>
+  <div class="two">
+    <div class="card"><h3 class="t">Problem</h3><p>Environmental sounds such as sirens, rain, or dog barks carry valuable context for smart-city monitoring, security, and accessibility, but raw audio waveforms are difficult for machine learning models to interpret directly.</p></div>
+    <div class="card"><h3 class="t">Objective</h3><p>Build and deploy a deep learning model that accurately classifies 50 environmental sound categories by converting raw audio into visual representations a CNN can learn from.</p></div>
+  </div>
+  <div class="card"><h3 class="t">Approach at a glance</h3>
+    <ul style="padding-left:20px">
+      <li><b>Data:</b> the ESC-50 dataset, covering 50 environmental sound categories such as sirens, rain, and dog barks.</li>
+      <li><b>Features:</b> each audio clip is converted into a 3-channel image (Mel-Spectrogram, Delta, Delta-Delta).</li>
+      <li><b>Model:</b> a CNN built on the ResNet50 architecture learns to recognize the sound patterns.</li>
+      <li><b>Result:</b> 87% classification accuracy across the 50 categories.</li>
+      <li><b>Deployment:</b> the model runs in an interactive Streamlit web app where anyone can test it.</li>
+      <li><b>Why it matters:</b> turning audio into images lets proven image-recognition models handle sound, which opens the door to uses like smart-city monitoring and accessibility tools.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Methodology</h2>
+  <div class="chips" style="align-items:center;gap:10px">
+    <span class="chip c0">Raw audio (ESC-50)</span><i style="color:var(--mu);font-style:normal">→</i>
+    <span class="chip c1">Mel-Spectrogram</span><i style="color:var(--mu);font-style:normal">→</i>
+    <span class="chip c2">Delta</span><i style="color:var(--mu);font-style:normal">→</i>
+    <span class="chip c3">Delta-Delta</span><i style="color:var(--mu);font-style:normal">→</i>
+    <span class="chip c4">3-channel image</span><i style="color:var(--mu);font-style:normal">→</i>
+    <span class="chip c5">ResNet50 CNN</span><i style="color:var(--mu);font-style:normal">→</i>
+    <span class="chip c0">Sound class prediction</span>
+  </div>
+  <p class="sub" style="margin-top:20px">Raw audio signals from the ESC-50 dataset were converted into 3-channel visual representations (Mel-Spectrogram, Delta, Delta-Delta), so an image-based CNN could learn both the frequency content of a sound and how it changes over time.</p>
+</section>
+
+<section>
+  <h2>Result Summary of The Project</h2>
+  <div class="grid3">
+    <div class="card"><h3 class="t">Rich Feature Representation</h3><p>Transformed raw audio into 3-channel Mel-Spectrogram, Delta, and Delta-Delta images, capturing both frequency patterns and their temporal dynamics.</p></div>
+    <div class="card"><h3 class="t">Strong Classification Performance</h3><p>A CNN built on the ResNet50 architecture achieved 87% classification accuracy across 50 environmental sound categories.</p></div>
+    <div class="card"><h3 class="t">Deployed as an Interactive App</h3><p>The trained model was deployed as an interactive web application using Streamlit, so anyone can try audio classification in the browser.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>App Demo</h2>
+  <p class="sub">Click an image to enlarge it, or try the app yourself.</p>
+  <div class="gal">
+    <figure class="shot" style="grid-column:1/-1"><div class="box">Add assets/app-home.png<img src="assets/app-home.png" alt="Streamlit app home page" onerror="this.remove()"></div><figcaption>Streamlit app home page</figcaption></figure>
+    <figure class="shot"><div class="box">Add assets/app-demo-1.png<img src="assets/app-demo-1.png" alt="Streamlit app screenshot 1" onerror="this.remove()"></div><figcaption>Uploading an audio clip</figcaption></figure>
+    <figure class="shot"><div class="box">Add assets/app-demo-2.png<img src="assets/app-demo-2.png" alt="Streamlit app screenshot 2" onerror="this.remove()"></div><figcaption>Predicted sound class</figcaption></figure>
+  </div>
+  <div class="center">
+    <a class="btn p" href="https://esc50-audioclassification.streamlit.app/" target="_blank" rel="noopener">Try the live app</a>
+    <button class="btn" data-open="links">View project links</button>
+  </div>
+</section>
+
+<div class="nextp"><a href="bpjs-sentiment.html">Previous: BPJS sentiment analysis</a><a href="index.html#projects">Back to all projects</a></div>
+</main>
+
+<dialog id="links">
+  <h3 class="t">Project links</h3>
+  <a class="lk" href="https://esc50-audioclassification.streamlit.app/" target="_blank" rel="noopener"><b>Live Streamlit app</b><span>esc50-audioclassification.streamlit.app</span></a>
+  <a class="lk" href="https://github.com/daniellincolnginting/Environmental-Audio-Analysis" target="_blank" rel="noopener"><b>GitHub repository</b><span>github.com/daniellincolnginting/Environmental-Audio-Analysis</span></a>
+  <form method="dialog" style="margin-top:20px"><button class="btn">Close</button></form>
+</dialog>
+<dialog id="lb" class="lb"><img alt=""></dialog>
+
+<footer>© 2026 Daniel Lincoln Ginting</footer>
+<script src="script.js"></script>
+<script src="i18n-id.js"></script>
+<script src="i18n.js"></script>
+</body>
+</html>
